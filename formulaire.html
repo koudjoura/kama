@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script>
+      function submitForm() {
+        var formData = document.getElementById("form").elements;
+        var displayData = document.getElementById("display-data");
+        displayData.innerHTML = "";
+
+        for (var i = 0; i < formData.length - 1; i++) {
+          displayData.innerHTML += formData[i].name + " : " + formData[i].value + "<br>";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>informations personnelles</h1>
+    <form id="form">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="Nom"><br><br>
+      <label for="name">prenom :</label>
+      <input type="text" id="name" name="prenom"><br><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="Email"><br><br>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="Mot de passe"><br><br>
+
+      <input type="button" value="Soumettre" onclick="submitForm()">
+    </form>
+    <div id="display-data"></div>
+  </body>
+</html>

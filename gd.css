@@ -1,0 +1,35 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+}
+form{
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid #ffeaea;
+    border-radius: 15px;
+    background-color:burlywood
+}
+input{
+    padding: 10px 45px;
+    border-radius: 15px;
+}
+.information{
+    width: 200px;
+    background-color: #8394e5;
+    color: #fff;
+    
+}
+h1{
+    color: black;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+}
+        form{
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(212, 129, 176);
+           
+        }
+        label{
+            color: white;
+        }
+        input{
+            border-radius: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Nombre1:</label><input type="text" name="" id="nomb1">
+        
+        <label for="">Nombre2:</label>
+        <input type="text" name="" id="nomb2">
+        <br>
+        <button id="btn" type="submit">calculer</button>
+        <br>
+        <label for="">Addition:</label>
+        <input type="text" name="" id="Addi">
+        <label for="">Multiplication:</label>
+        <input type="text" name="" id="multi">
+        <label for="">Division:</label>
+        <input type="text" name="" id="Div">
+        <label for="">Modulo:</label>
+        <input type="text" name="" id="Mod">
+    </form>
+    <script>
+        function calcule(){
+            event.preventDefault();
+            let nomb1 = Number(document.getElementById("nomb1").value);
+            let nomb2 = Number(document.getElementById("nomb2").value);
+            if(nomb2 ==0){
+                alert(`impossible`);
+            }
+            else{
+                 document.getElementById("Addi").value = nomb1 + nomb2;
+                document.getElementById("multi").value = nomb1 * nomb2;
+                document.getElementById("Div").value = nomb1 / nomb2;
+                document.getElementById("Mod").value = nomb1 % nomb2;
+            }
+            
+        }
+        document.getElementById("btn").addEventListener("click",calcule);
+    </script>
+</body>
+</html>

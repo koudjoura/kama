@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gd.css">
+</head>
+<body>
+    <h1>informations personnelles</h1>
+    <form action="">
+        <label for="">Prenom:</label>
+        <input type="text" id="firstname">
+        <label for="">Nom:</label>
+        <input type="text" id="name">
+        <label for="">Date de naissanse</label>
+        <input type="date"  id="date">
+        <label for="">Lieu de naissanse</label>
+        <input type="text" id="birthsday">
+         <select id="statut"> 
+            <option>Situation Patrimoniale</option>
+            <option value="celibataire">Celibataire</option>
+            <option value="marie">Marie</option>
+            <option value="polygame">Polygame</option>
+            <option value="divorce">Divorce</option>
+         </select>
+         <label for="">
+            sexe:
+            <input type="radio" name="" id="woman" value="femme"> feminin
+            <input type="radio" name="" id="homme" value="homme"> masculin
+         </label>
+         <input type="submit"   id="btn" value="envoyer">
+    </form>
+    <script src="gd.js"></script>
+</body>
+</html>
